@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_4/presentation/aktivitaet.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenFour extends StatelessWidget {
@@ -8,18 +9,20 @@ class DirtyScreenFour extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Dirty Screen #4"),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
+            Aktivitaet(
+                color: Colors.blueAccent, word: "Home", icon: Icons.home),
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
                 color: Colors.blueAccent,
               ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
+              margin: EdgeInsets.all(4),
+              padding: EdgeInsets.all(16.0),
+              child: Row(
                 children: [
                   Icon(Icons.home, color: Colors.white),
                   SizedBox(width: 8),
@@ -35,9 +38,9 @@ class DirtyScreenFour extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 color: Colors.greenAccent,
               ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
+              margin: EdgeInsets.all(4),
+              padding: EdgeInsets.all(16.0),
+              child: Row(
                 children: [
                   Icon(Icons.work, color: Colors.white),
                   SizedBox(width: 8),
@@ -53,9 +56,9 @@ class DirtyScreenFour extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 color: Colors.orangeAccent,
               ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
+              margin: EdgeInsets.all(4),
+              padding: EdgeInsets.all(16.0),
+              child: Row(
                 children: [
                   Icon(Icons.school, color: Colors.white),
                   SizedBox(width: 8),
@@ -71,9 +74,9 @@ class DirtyScreenFour extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 color: Colors.purpleAccent,
               ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
+              margin: EdgeInsets.all(4),
+              padding: EdgeInsets.all(16.0),
+              child: Row(
                 children: [
                   Icon(Icons.directions_bike, color: Colors.white),
                   SizedBox(width: 8),
