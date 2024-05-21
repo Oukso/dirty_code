@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
-class Aktivitaet extends StatelessWidget {
-  const Aktivitaet(
-      {super.key, required this.color, required this.word, required this.icon});
+class Favorite extends StatelessWidget {
+  const Favorite({super.key, required this.color, required this.num});
   final Color color;
-  final String word;
-  final IconData icon;
+  final String num;
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +16,10 @@ class Aktivitaet extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          Icon(icon, color: Colors.white),
+          const Icon(Icons.favorite, color: Colors.white),
           const SizedBox(width: 8),
           Text(
-            word,
+            'Favorite $num',
             style: const TextStyle(fontSize: 20, color: Colors.white),
           ),
         ],

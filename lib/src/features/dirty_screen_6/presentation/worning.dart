@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
-class Aktivitaet extends StatelessWidget {
-  const Aktivitaet(
-      {super.key, required this.color, required this.word, required this.icon});
+class Worning extends StatelessWidget {
+  const Worning({super.key, required this.color, required this.numb});
   final Color color;
-  final String word;
-  final IconData icon;
+  final String numb;
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +16,11 @@ class Aktivitaet extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          Icon(icon, color: Colors.white),
+          const Icon(Icons.warning, color: Colors.black),
           const SizedBox(width: 8),
           Text(
-            word,
-            style: const TextStyle(fontSize: 20, color: Colors.white),
+            'Warning $numb',
+            style: const TextStyle(fontSize: 20, color: Colors.black),
           ),
         ],
       ),
